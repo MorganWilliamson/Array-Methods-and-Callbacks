@@ -46,10 +46,10 @@ getYears(getFinals(fifaData));
 
 /* Task 4: Implement a higher-order function called `getWinners`, that accepts the callback function `getFinals()` and determine the winner (home or away) of each `finals` game. Return the name of all winning countries in an array called `winners` */ 
 
-function getWinners(/* code here */) {
-
-    /* code here */
-
+function getWinners(callback) {
+    //Pulling "Win conditions"?
+    // OH DUH. It's a higher order function. Callback getFinals to get all the finals games. Filter that down to the winners?
+    //return an array of all the winning countries
 };
 
 getWinners();
