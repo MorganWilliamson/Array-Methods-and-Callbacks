@@ -25,11 +25,13 @@ let lastFinal = fifaData.filter(function(item){
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 function getFinals(data){
-    
-    return data.Stage 
-};
+    let finals = data.filter(function(item){
+        return (item.Stage === "Final");
+    })
+return finals;
+}
 
-console.log(getFinals(fifaData))
+console.log("Finals: ", getFinals(fifaData))
 
 /* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
 
